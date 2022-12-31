@@ -1,0 +1,56 @@
+.movie-background {
+  background-color: black;
+  border-top: 10px solid rgb(25, 25, 25);
+  border-bottom: 10px solid rgb(25, 25, 25);
+  min-height: 32vh;
+  max-height: 100%;
+  color: white;
+}
+
+.movielist-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: auto;
+}
+
+.movielist-title {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.movielist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.listmovie-item {
+  color: rgb(146, 143, 143);
+  font-size: large;
+}
+
+.listmovie-item:nth-child(3) {
+  grid-column: last-col / span 1;
+  grid-row: 1 / last-line;
+  grid-row-start: span 9000;
+}
+
+/* responsive */
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .movielist-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  /* For Desktop: */
+  .movielist-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}

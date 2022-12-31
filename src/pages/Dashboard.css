@@ -1,0 +1,89 @@
+.dashboard-background {
+  padding-top: 5rem;
+  min-height: 100vh;
+  max-height: 100%;
+  background-color: black;
+  background-image: url("../assets/images/dashboardImage.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(70%);
+}
+
+.dashboard-container {
+  position: absolute;
+  bottom: 17%;
+  left: 5%;
+}
+
+.dashboard-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: American Captain;
+}
+
+.dashboard-button {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.dashboard-play-button {
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 600;
+  margin-right: 2rem;
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.dashboard-more-button {
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  font-size: large;
+  font-weight: 600;
+  margin-right: 2rem;
+
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+  border: none;
+  background-color: grey;
+  color: white;
+  opacity: 80%;
+
+  cursor: pointer;
+}
+
+.dashboard-more-button:hover {
+  opacity: 100%;
+}
+
+
+/* responsive */
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .dashboard-title {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  /* For Desktop: */
+  .dashboard-title {
+    font-size: 6rem;
+  }
+}

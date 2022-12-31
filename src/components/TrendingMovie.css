@@ -1,0 +1,17 @@
+.trending-background{
+    background-color: black;
+    height: 20rem;
+}
+
+.trending-title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+.trending-slider-setting{
+    width:95%;
+    margin: auto;
+}
