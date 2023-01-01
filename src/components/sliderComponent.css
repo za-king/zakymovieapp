@@ -6,6 +6,7 @@
   align-items: center;
   padding: 0 20px;
   z-index: 999 !important;
+  color: white;
 }
 
 .slick-track {
@@ -26,7 +27,7 @@
 .slick-slide div:hover img {
   border-radius: 0%;
   width: 100%;
-  height: 200px;
+  height: 150px;
   
 }
 .slider-image {
@@ -41,13 +42,24 @@
   object-fit: cover;
 }
 
+.icon{
+  font-size: 1.5rem;
+  margin-right: 4px;
+}
 
+.time-view{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
 
 .slider-description {
   color: white;
   display: none;
+  padding: 1rem;
 }
 
 .slick-slide div:hover .slider-description {
   display: block;
+  
 }

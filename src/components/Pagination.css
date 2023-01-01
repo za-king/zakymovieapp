@@ -1,0 +1,23 @@
+.pagination{
+    
+    width: 15rem;
+    height: 3rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.page-link{
+    border: black;
+    cursor: pointer;
+    background-color: rgb(35, 35, 35);
+    padding: 1rem;
+}
+
+.page-item .active{
+    background-color: rgb(255, 255, 255) !important;
+    color: black !important;
+}
+/* .page-link .active{
+    background-color: aquamarine !important;
+} */

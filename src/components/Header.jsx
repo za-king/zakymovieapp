@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
 import { useSelector, useDispath } from "react-redux";
@@ -8,14 +8,13 @@ import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
   const navigate = useNavigate();
-
   //get user is Login Or not form store
-
   const getLoginInfo = useSelector((state) => state.login.userIsLogin);
 
   const handleSigin = () => {
     navigate("login");
   };
+
   return (
     <div className="header-background">
       <div className="header-container">
@@ -38,21 +37,21 @@ const Header = () => {
 
         <div className="header-navitem">
           <div className="header-left-left">
-          {getLoginInfo ? (
-            <div className="header-navitem-login">
-              <SearchBar />
-              <BiLogIn style={{ color: "white", fontSize: "2rem" }} />
-            </div>
-          ) : (
-            <button
-              className="header-signin-button"
-              onClick={() => {
-                handleSigin();
-              }}
-            >
-              SignIn
-            </button>
-          )}
+            {getLoginInfo ? (
+              <div className="header-navitem-login">
+                <SearchBar />
+                <BiLogIn style={{ color: "white", fontSize: "2rem" }} />
+              </div>
+            ) : (
+              <button
+                className="header-signin-button"
+                onClick={() => {
+                  handleSigin();
+                }}
+              >
+                SignIn
+              </button>
+            )}
           </div>
           <div className="header-close-button">
             <AiOutlineClose style={{ color: "white", fontSize: "2rem" }} />

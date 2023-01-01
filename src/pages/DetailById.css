@@ -1,0 +1,23 @@
+.detailbyid-background{
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    
+}
+
+.detailbyid-container{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+}
+
+/* .detailbyid-background img {
+
+} */
+.detailbyid-detail{
+    padding: 3rem;
+}
+
+.title{
+    font-size: xx-large;
+}
