@@ -12,11 +12,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   
-  const [isLogin , setIsLogin] = useState(false)
-  
-  useEffect(()=>{
-    setIsLogin( JSON.parse( localStorage.getItem("user")).userIsLogin)
-  },[])
+ 
 
   
 

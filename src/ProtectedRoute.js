@@ -5,7 +5,7 @@ const ProtectedRoute = (props) => {
   
   const user = JSON.parse(localStorage.getItem("user"))
   console.log(user)
-  if (user && user.userIsLogin) {
+  if (user ) {
     return <Outlet />;
   } else {
     return <Navigate to={"/login"} replace />;

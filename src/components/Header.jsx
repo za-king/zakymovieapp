@@ -11,7 +11,7 @@ const Header = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
-  const getLoginInfo = JSON.parse(localStorage.getItem("user")).userIsLogin;
+  
 
   const handleSigin = () => {
     navigate("login");
@@ -27,7 +27,7 @@ const Header = () => {
       <div className="header-container">
         <div className="header-left">
           <div className="header-logo">Movie App</div>
-          {getLoginInfo && (
+          {true && (
             <ul>
               <li className="header-item">
                 <a href="/">Home</a>
@@ -44,7 +44,7 @@ const Header = () => {
 
         <div className="header-navitem">
           <div className="header-left-left">
-            {getLoginInfo ? (
+            {true ? (
               <div className="header-navitem-login">
                 <SearchBar />
                 <BiLogIn
