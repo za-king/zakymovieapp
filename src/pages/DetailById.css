@@ -18,6 +18,14 @@
     padding: 3rem;
 }
 
-.title{
+.detailbyid-detail .title{
     font-size: xx-large;
+    height: 5rem;
+    width: 20rem;
+}
+
+.detail-info {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-top: 2rem;
 }

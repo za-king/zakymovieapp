@@ -1,14 +1,25 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch ,useSelector } from "react-redux";
+import { loaduser } from "./utils/loginSlice";
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import ProtectedRoute from "./ProtectedRoute";
 import Dashboard from "./pages/Dashboard";
 import DetailById from "./pages/DetailById";
 import SearchPage from "./pages/SearchPage";
+import { useEffect, useState } from "react";
+
 function App() {
-  const getLoginInfo = useSelector((state) => state.login.userIsLogin);
+  
+  const [isLogin , setIsLogin] = useState(false)
+  
+  useEffect(()=>{
+    setIsLogin( JSON.parse( localStorage.getItem("user")).userIsLogin)
+  },[])
+
+  
+
 
   return (
     <div className="app">
@@ -16,7 +27,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="login" element={<SignIn />} />
-          <Route element={<ProtectedRoute user={getLoginInfo} />}>
+          <Route element={<ProtectedRoute user={ JSON.parse( localStorage.getItem("user"))} />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="detail/:id" element={<DetailById />} />
             <Route path="search/:query" element={<SearchPage />} />

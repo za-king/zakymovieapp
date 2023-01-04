@@ -20,12 +20,19 @@ form {
     overflow: hidden;
 }
 
+
+
 .sugestion-container{
     padding: 0.5rem;
 }
 .sugestion-item{
     border-bottom: 2px solid white;
     margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.sugestion-item:hover{
+  background-color: rgb(19, 19, 19);
 }
 
 .search-icon{

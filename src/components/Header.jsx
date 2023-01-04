@@ -1,18 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { useNavigate } from "react-router-dom";
-import { useSelector, useDispath } from "react-redux";
+import { useDispatch } from "react-redux";
+import { userLogout } from "../utils/loginSlice";
 import SearchBar from "./SearchBar";
 import { BiLogIn } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Header = () => {
   const navigate = useNavigate();
-  //get user is Login Or not form store
-  const getLoginInfo = useSelector((state) => state.login.userIsLogin);
+  const dispatch = useDispatch();
+
+  const getLoginInfo = JSON.parse(localStorage.getItem("user")).userIsLogin;
 
   const handleSigin = () => {
     navigate("login");
+  };
+
+  const handleSignOut = () => {
+    dispatch(userLogout());
+    navigate("/login")
   };
 
   return (
@@ -40,7 +47,13 @@ const Header = () => {
             {getLoginInfo ? (
               <div className="header-navitem-login">
                 <SearchBar />
-                <BiLogIn style={{ color: "white", fontSize: "2rem" }} />
+                <BiLogIn
+                  className="header-signout-button"
+                  style={{ color: "white", fontSize: "2rem" }}
+                  onClick={() => {
+                    handleSignOut();
+                  }}
+                />
               </div>
             ) : (
               <button

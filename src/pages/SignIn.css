@@ -17,6 +17,12 @@
   color: white;
   
 }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+}
 .form-container{
     padding: 5rem;
 }
@@ -43,6 +49,7 @@
     height: 3rem;
     border-radius: 5px;
     border: none;
+   
 }
 
 .form-input::placeholder { /* Most modern browsers support this now. */
@@ -57,4 +64,8 @@
     border: none;
     cursor: pointer;
     font-size: large;
+    background-color: brown ;
+    color: white;
+    margin: auto;
+
 }

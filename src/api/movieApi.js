@@ -38,7 +38,11 @@ export const getNewReleaseMovie = async () => {
 
 export const getVideosByid = async (props) => {
   const response = await axios.get(
-    `${apiurl}/movie/${props}/videos?api_key=${apikey}`
+    `${apiurl}/movie/${props}/videos?api_key=${apikey}`,{
+			headers: {
+				'Content-Type':' text/json; charset=utf-8'
+			}
+		}
   );
 
   return response.data.results;
@@ -61,3 +65,4 @@ export const getDetailById = async (props) => {
   );
   return response.data;
 };
+

@@ -60,6 +60,7 @@ const SliderComponent = ({ movie }) => {
                 {infoDisplay && (
                   <>
                     <div className="slider-description">
+                      
                       <div className="slider icon">
                         <BsPlayFill className="icon" onClick={(e) =>{handleId(movieItem.media_type ,movieItem.id)}} />
                         <BsPlusLg className="icon" />
@@ -71,7 +72,7 @@ const SliderComponent = ({ movie }) => {
                           <div className="time-view">1 hours || 2432</div>
     
                         
-                        <div>
+                        <div className="info-description">
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Vero unde repellat quibusdam dignissimos earum
                           tempore 

@@ -27,13 +27,15 @@
 .slick-slide div:hover img {
   border-radius: 0%;
   width: 100%;
-  height: 150px;
+  height: 50%;
+  color: white !important;
   
 }
 .slider-image {
   cursor: pointer;
   overflow: hidden;
 }
+
 
 .slider-image img {
   width: 100%;
@@ -51,8 +53,13 @@
   width: 500px;
   display: flex;
   flex-direction: column;
+  color: white !important;
 }
 
+
+.info-description{
+  color: white !important;
+}
 .slider-description {
   color: white;
   display: none;

@@ -65,7 +65,15 @@
   border-radius: 5px;
   border: none;
   height: 2rem;
+  width: 5rem;
   margin: auto;
+  cursor: pointer;
+  background-color: brown;
+  font-size: large;
+  color: white;
+}
+
+.header-signout-button{
   cursor: pointer;
 }
 
