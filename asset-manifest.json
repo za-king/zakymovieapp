@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/zakymovieapp/static/css/main.412f6aff.css",
-    "main.js": "/zakymovieapp/static/js/main.97e76724.js",
+    "main.js": "/zakymovieapp/static/js/main.c23888d0.js",
     "static/js/787.5d5ea81f.chunk.js": "/zakymovieapp/static/js/787.5d5ea81f.chunk.js",
     "static/media/heroImage.jpg": "/zakymovieapp/static/media/heroImage.6ba1bc2f0795e01bc126.jpg",
     "static/media/dashboardImage.jpg": "/zakymovieapp/static/media/dashboardImage.3e2ea0b36167a625764f.jpg",
@@ -11,11 +11,11 @@
     "static/media/slick.woff": "/zakymovieapp/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/zakymovieapp/index.html",
     "main.412f6aff.css.map": "/zakymovieapp/static/css/main.412f6aff.css.map",
-    "main.97e76724.js.map": "/zakymovieapp/static/js/main.97e76724.js.map",
+    "main.c23888d0.js.map": "/zakymovieapp/static/js/main.c23888d0.js.map",
     "787.5d5ea81f.chunk.js.map": "/zakymovieapp/static/js/787.5d5ea81f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.412f6aff.css",
-    "static/js/main.97e76724.js"
+    "static/js/main.c23888d0.js"
   ]
 }
